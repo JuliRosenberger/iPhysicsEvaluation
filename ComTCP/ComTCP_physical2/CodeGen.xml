@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGen>
+	<Header date="2023-01-18" time="10:14:02" organization="machineering" application="iPhysics_3.1.master" build="6b7d6479c" version="3.1.15981.master" architecture="Windows 64 Bit"/>
+	<Manufacturer name="Bosch Rexroth ctrlX"/>
+	<Interface type="ComTCP" name="ComTCP_ctrlX103">
+		<Server host="192.168.8.175" hostHex="c0a808af" port="5003" portHex="138b" interval="7" protocol="TCP" packedMode="0" actAsServer="1" hostIP1="192" hostIP2="168" hostIP3="8" hostIP4="175"/>
+		<Inputs Count="10" SizeInBytes="40" SizeInBytes_PackedMessage="48">
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_TriggerZaehler_out" From="_EndoflEnd_of_Line_Packaging_STEP?TriggerZaehler_out" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="E0.0"/>
+			<Connection Name="Gleitschiene_Links_AXIS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Gleitschiene_Links?KinAxis" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="ED8"/>
+			<Connection Name="Laufwagen_1_Busy" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1?Busy" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="E12.0"/>
+			<Connection Name="EndoflLaufwagen_AXIS" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?KinAxis" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="12" PackedByteIndex="24" PackedBitIndex="1" HardwareAddress="ED16"/>
+			<Connection Name="EndoflLaufwagen_DLT_POS" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?KinDelta" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="16" PackedByteIndex="28" PackedBitIndex="0" HardwareAddress="ED20"/>
+			<Connection Name="EndoflLaufwagen_ACT_SPD" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?KinSpeed" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="20" PackedByteIndex="32" PackedBitIndex="0" HardwareAddress="ED24"/>
+			<Connection Name="EndoflLaufwagen_KinState" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?KinState" Type="INT32" S7Type="DINT" SizeInBytes="4" CodesysType="DINT" StructType="" ByteIndex="24" PackedByteIndex="36" PackedBitIndex="0" HardwareAddress="ED28"/>
+			<Connection Name="EndoflLaufwagen_ZaehlerQuer" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?ZaehlerQuer" Type="UINT16" S7Type="UINT" SizeInBytes="4" CodesysType="UINT" StructType="" ByteIndex="28" PackedByteIndex="40" PackedBitIndex="0" HardwareAddress="EW32"/>
+			<Connection Name="EndoflLaufwagen_ZaehlerLaengs" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?ZaehlerLaengs" Type="UINT16" S7Type="UINT" SizeInBytes="4" CodesysType="UINT" StructType="" ByteIndex="32" PackedByteIndex="42" PackedBitIndex="0" HardwareAddress="EW36"/>
+			<Connection Name="EndoflLaufwagen_Hubausschiebpos" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?Hubausschiebpos" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="36" PackedByteIndex="44" PackedBitIndex="0" HardwareAddress="ED40"/>
+		</Inputs>
+		<Outputs Count="6" SizeInBytes="24" SizeInBytes_PackedMessage="24">
+			<Connection Name="Pusher_1_Enabled" From="_EndoflEnd_of_Line_Packaging_STEP_Pusher_1?Enabled" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="A0.0"/>
+			<Connection Name="Drehschieber_Achse_1_Set_AST" From="_EndoflEnd_of_Line_Packaging_STEP_Drehschieber_1_Drehschieber_Achse_1?Set_AST" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="A4.1"/>
+			<Connection Name="Drehschieber_Achse_1_Set_GST" From="_EndoflEnd_of_Line_Packaging_STEP_Drehschieber_1_Drehschieber_Achse_1?Set_GST" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="20" PackedBitIndex="2" HardwareAddress="A4.2"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Status_out" From="_EndoflEnd_of_Line_Packaging_STEP?Status_out" Type="UINT16" S7Type="UINT" SizeInBytes="4" CodesysType="UINT" StructType="" ByteIndex="12" PackedByteIndex="20" PackedBitIndex="3" HardwareAddress="AW8"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Ausschieben_in" From="_EndoflEnd_of_Line_Packaging_STEP?Ausschieben_in" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="16" PackedByteIndex="22" PackedBitIndex="0" HardwareAddress="A12.0"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_Cmd_out" From="_EndoflEnd_of_Line_Packaging_STEP?Laufwagen_1_Cmd_out" Type="UINT16" S7Type="UINT" SizeInBytes="4" CodesysType="UINT" StructType="" ByteIndex="20" PackedByteIndex="22" PackedBitIndex="1" HardwareAddress="AW16"/>
+		</Outputs>
+	</Interface>
+	<Functions/>
+	<Tasks>
+		<Task Name="PLC" CycleTime="7" Priority="0"/>
+	</Tasks>
+	<Mechatronics>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_TriggerZaehler_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_TriggerZaehler_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - TriggerZaehler_out]]></VarComment>
+			<VarName><![CDATA[TriggerZaehler_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?TriggerZaehler_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gleitschiene_Links]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Links]]></ItemPath>
+			<PLCTagName><![CDATA[Gleitschiene_Links_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[Gleitschiene_Links_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gleitschiene_Links) (Kinematic) - KinAxis]]></VarComment>
+			<VarName><![CDATA[KinAxis]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Links?KinAxis]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Laufwagen:1]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1]]></ItemPath>
+			<PLCTagName><![CDATA[Laufwagen_1_Busy]]></PLCTagName>
+			<SymbolName><![CDATA[Laufwagen_1_Busy]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Laufwagen:1) (ModelScript) - Busy]]></VarComment>
+			<VarName><![CDATA[Busy]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1?Busy]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (Kinematic) - KinAxis]]></VarComment>
+			<VarName><![CDATA[KinAxis]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?KinAxis]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_DLT_POS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_DLT_POS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (Kinematic) - KinDelta]]></VarComment>
+			<VarName><![CDATA[KinDelta]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?KinDelta]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_ACT_SPD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_ACT_SPD]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (Kinematic) - KinSpeed]]></VarComment>
+			<VarName><![CDATA[KinSpeed]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?KinSpeed]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_KinState]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_KinState]]></SymbolName>
+			<Type><![CDATA[INT32]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (Kinematic) - KinState]]></VarComment>
+			<VarName><![CDATA[KinState]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?KinState]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_ZaehlerQuer]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_ZaehlerQuer]]></SymbolName>
+			<Type><![CDATA[UINT16]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (ModelScript) - ZaehlerQuer]]></VarComment>
+			<VarName><![CDATA[ZaehlerQuer]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?ZaehlerQuer]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_ZaehlerLaengs]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_ZaehlerLaengs]]></SymbolName>
+			<Type><![CDATA[UINT16]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (ModelScript) - ZaehlerLaengs]]></VarComment>
+			<VarName><![CDATA[ZaehlerLaengs]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?ZaehlerLaengs]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_Hubausschiebpos]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_Hubausschiebpos]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (ModelScript) - Hubausschiebpos]]></VarComment>
+			<VarName><![CDATA[Hubausschiebpos]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?Hubausschiebpos]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Pusher:1]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1]]></ItemPath>
+			<PLCTagName><![CDATA[Pusher_1_Enabled]]></PLCTagName>
+			<SymbolName><![CDATA[Pusher_1_Enabled]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Pusher:1) (ModelScript) - Enabled]]></VarComment>
+			<VarName><![CDATA[Enabled]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?Enabled]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Drehschieber_Achse:1]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1]]></ItemPath>
+			<PLCTagName><![CDATA[Drehschieber_Achse_1_Set_AST]]></PLCTagName>
+			<SymbolName><![CDATA[Drehschieber_Achse_1_Set_AST]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Drehschieber_Achse:1) (ModelScript) - Set_AST]]></VarComment>
+			<VarName><![CDATA[Set_AST]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?Set_AST]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Drehschieber_Achse:1]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1]]></ItemPath>
+			<PLCTagName><![CDATA[Drehschieber_Achse_1_Set_GST]]></PLCTagName>
+			<SymbolName><![CDATA[Drehschieber_Achse_1_Set_GST]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Drehschieber_Achse:1) (ModelScript) - Set_GST]]></VarComment>
+			<VarName><![CDATA[Set_GST]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?Set_GST]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Status_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Status_out]]></SymbolName>
+			<Type><![CDATA[UINT16]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Status_out]]></VarComment>
+			<VarName><![CDATA[Status_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Status_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ausschieben_in]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ausschieben_in]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Ausschieben_in]]></VarComment>
+			<VarName><![CDATA[Ausschieben_in]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Ausschieben_in]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_Cmd_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_Cmd_out]]></SymbolName>
+			<Type><![CDATA[UINT16]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Laufwagen_1_Cmd_out]]></VarComment>
+			<VarName><![CDATA[Laufwagen_1_Cmd_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Laufwagen_1_Cmd_out]]></VarPath>
+		</Entity>
+	</Mechatronics>
+</CodeGen>

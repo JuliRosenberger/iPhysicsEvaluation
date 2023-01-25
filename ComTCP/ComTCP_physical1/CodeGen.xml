@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGen>
+	<Header date="2023-01-15" time="21:41:59" organization="machineering" application="iPhysics_3.1.master" build="6b7d6479c" version="3.1.15981.master" architecture="Windows 64 Bit"/>
+	<Manufacturer name="Bosch Rexroth ctrlX"/>
+	<Interface type="ComTCP" name="ComTCP_ctrlX102">
+		<Server host="192.168.8.175" hostHex="c0a808af" port="5005" portHex="138d" interval="7" protocol="TCP" packedMode="0" actAsServer="1" hostIP1="192" hostIP2="168" hostIP3="8" hostIP4="175"/>
+		<Inputs Count="7" SizeInBytes="28" SizeInBytes_PackedMessage="40">
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Enabled_out" From="_EndoflEnd_of_Line_Packaging_STEP?Enabled_out" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="E0.0"/>
+			<Connection Name="Pusher_1_AXIS" From="_EndoflEnd_of_Line_Packaging_STEP_Pusher_1?KinAxis" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="ED8"/>
+			<Connection Name="Pusher_1_LBK" From="_EndoflEnd_of_Line_Packaging_STEP_Pusher_1?KinAtBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="E12.0"/>
+			<Connection Name="Pusher_1_LFR" From="_EndoflEnd_of_Line_Packaging_STEP_Pusher_1?KinAtFront" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="24" PackedBitIndex="1" HardwareAddress="E12.1"/>
+			<Connection Name="Strahl_1_IR" From="_EndoflEnd_of_Line_Packaging_STEP_13000_1_Strahl_1?IR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="16" PackedByteIndex="24" PackedBitIndex="2" HardwareAddress="E12.2"/>
+			<Connection Name="Quelle_1_NumReleased" From="_EndoflEnd_of_Line_Packaging_STEP_Karton_1_Quelle_1?NumReleased" Type="UINT64" S7Type="LWORD" SizeInBytes="4" CodesysType="ULINT" StructType="" ByteIndex="20" PackedByteIndex="24" PackedBitIndex="3" HardwareAddress="ED16"/>
+			<Connection Name="Quelle_1_CNT" From="_EndoflEnd_of_Line_Packaging_STEP_Karton_1_Quelle_1?CountDown" Type="FLOAT64" S7Type="LREAL" SizeInBytes="4" CodesysType="LREAL" StructType="" ByteIndex="24" PackedByteIndex="32" PackedBitIndex="0" HardwareAddress="ED20"/>
+		</Inputs>
+		<Outputs Count="3" SizeInBytes="12" SizeInBytes_PackedMessage="20">
+			<Connection Name="Pusher_1_BWD" From="_EndoflEnd_of_Line_Packaging_STEP_Pusher_1?KinBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="A0.0"/>
+			<Connection Name="Pusher_1_FWD" From="_EndoflEnd_of_Line_Packaging_STEP_Pusher_1?KinForward" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="A4.1"/>
+			<Connection Name="EndoflLaufwagen_TriggerZaehler" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?TriggerZaehler" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="20" PackedBitIndex="2" HardwareAddress="A4.2"/>
+		</Outputs>
+	</Interface>
+	<Functions/>
+	<Tasks>
+		<Task Name="PLC" CycleTime="7" Priority="0"/>
+	</Tasks>
+	<Mechatronics>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Enabled_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Enabled_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Enabled_out]]></VarComment>
+			<VarName><![CDATA[Enabled_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Enabled_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Pusher:1]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1]]></ItemPath>
+			<PLCTagName><![CDATA[Pusher_1_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[Pusher_1_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Pusher:1) (Kinematic) - KinAxis]]></VarComment>
+			<VarName><![CDATA[KinAxis]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinAxis]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Pusher:1]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1]]></ItemPath>
+			<PLCTagName><![CDATA[Pusher_1_LBK]]></PLCTagName>
+			<SymbolName><![CDATA[Pusher_1_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Pusher:1) (Kinematic) - KinAtBack]]></VarComment>
+			<VarName><![CDATA[KinAtBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinAtBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Pusher:1]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1]]></ItemPath>
+			<PLCTagName><![CDATA[Pusher_1_LFR]]></PLCTagName>
+			<SymbolName><![CDATA[Pusher_1_LFR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Pusher:1) (Kinematic) - KinAtFront]]></VarComment>
+			<VarName><![CDATA[KinAtFront]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinAtFront]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Strahl:1]]></ComponentName>
+			<Function><![CDATA[LightBarrier]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/13000:1/Strahl:1]]></ItemPath>
+			<PLCTagName><![CDATA[Strahl_1_IR]]></PLCTagName>
+			<SymbolName><![CDATA[Strahl_1_IR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Strahl:1) (LightBarrier) - IR]]></VarComment>
+			<VarName><![CDATA[IR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/13000:1/Strahl:1?IR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Quelle:1]]></ComponentName>
+			<Function><![CDATA[TransientSource]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Karton:1/Quelle:1]]></ItemPath>
+			<PLCTagName><![CDATA[Quelle_1_NumReleased]]></PLCTagName>
+			<SymbolName><![CDATA[Quelle_1_NumReleased]]></SymbolName>
+			<Type><![CDATA[UINT64]]></Type>
+			<VarComment><![CDATA[(Quelle:1) (TransientSource) - NumReleased]]></VarComment>
+			<VarName><![CDATA[NumReleased]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Karton:1/Quelle:1?NumReleased]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Quelle:1]]></ComponentName>
+			<Function><![CDATA[TransientSource]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Karton:1/Quelle:1]]></ItemPath>
+			<PLCTagName><![CDATA[Quelle_1_CNT]]></PLCTagName>
+			<SymbolName><![CDATA[Quelle_1_CNT]]></SymbolName>
+			<Type><![CDATA[FLOAT64]]></Type>
+			<VarComment><![CDATA[(Quelle:1) (TransientSource) - CountDown]]></VarComment>
+			<VarName><![CDATA[CountDown]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Karton:1/Quelle:1?CountDown]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Pusher:1]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1]]></ItemPath>
+			<PLCTagName><![CDATA[Pusher_1_BWD]]></PLCTagName>
+			<SymbolName><![CDATA[Pusher_1_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Pusher:1) (Kinematic) - KinBack]]></VarComment>
+			<VarName><![CDATA[KinBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Pusher:1]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1]]></ItemPath>
+			<PLCTagName><![CDATA[Pusher_1_FWD]]></PLCTagName>
+			<SymbolName><![CDATA[Pusher_1_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Pusher:1) (Kinematic) - KinForward]]></VarComment>
+			<VarName><![CDATA[KinForward]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinForward]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_TriggerZaehler]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_TriggerZaehler]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (ModelScript) - TriggerZaehler]]></VarComment>
+			<VarName><![CDATA[TriggerZaehler]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?TriggerZaehler]]></VarPath>
+		</Entity>
+	</Mechatronics>
+</CodeGen>

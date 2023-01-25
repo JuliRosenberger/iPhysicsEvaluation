@@ -1,0 +1,9 @@
+SymbolName;Type;Direction;ComponentName;Function;DriveType;VarName;VarPath
+EndoflEnd_of_Line_Packaging_STEP_Set_AST_out;BOOL;READ;ComTCP_ctrlX104;;;EndoflEnd_of_Line_Packaging_STEP_Set_AST_out;"ComTcp://comtcp/ComTCP_ctrlX104?EndoflEnd_of_Line_Packaging_STEP_Set_AST_out"
+EndoflEnd_of_Line_Packaging_STEP_Set_GST_out;BOOL;READ;ComTCP_ctrlX104;;;EndoflEnd_of_Line_Packaging_STEP_Set_GST_out;"ComTcp://comtcp/ComTCP_ctrlX104?EndoflEnd_of_Line_Packaging_STEP_Set_GST_out"
+Drehschieber_Achse_1_TGT_POS;FLOAT32;WRITE;ComTCP_ctrlX104;Kinematic;;Drehschieber_Achse_1_TGT_POS;"ComTcp://comtcp/ComTCP_ctrlX104?Drehschieber_Achse_1_TGT_POS"
+Drehschieber_Achse_1_AXIS;FLOAT32;READ;Drehschieber_Achse:1;Kinematic;;KinAxis;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?KinAxis"
+Drehschieber_Achse_1_KinActPosOffset;FLOAT32;READ;Drehschieber_Achse:1;Kinematic;PositioningMotor;KinActPosOffset;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?KinActPosOffset"
+Drehschieber_Achse_1_RCHD;BOOL;READ;Drehschieber_Achse:1;Kinematic;PositioningMotor;KinReached;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?KinReached"
+EndoflEnd_of_Line_Packaging_STEP_Ist_AST_out;BOOL;WRITE;EndoflEnd_of_Line_Packaging_STEP;ModelScript;;Ist_AST_out;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Ist_AST_out"
+EndoflEnd_of_Line_Packaging_STEP_Ist_GST_out;BOOL;WRITE;EndoflEnd_of_Line_Packaging_STEP;ModelScript;;Ist_GST_out;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Ist_GST_out"

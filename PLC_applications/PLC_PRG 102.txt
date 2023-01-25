@@ -1,0 +1,40 @@
+
+PROGRAM PLC_PRG
+VAR
+	Sensor: BOOL := FALSE;
+	Status: UINT :=0;
+END_VAR
+
+CASE Status OF
+0 :
+    Laufwagen_TriggerZaehler := FALSE;
+    IF GVL.Enabled_out AND Sensor_Foerderband_Einlauf_IR AND NOT Sensor THEN 
+        Laufwagen_TriggerZaehler := TRUE;
+        Schieber_Foerderband_Einlauf_FWD := TRUE;
+        Schieber_Foerderband_Einlauf_BWD := FALSE;
+    
+        Status := 10;
+    END_IF
+
+10:
+
+    IF Schieber_Foerderband_Einlauf_LFR THEN        
+        Schieber_Foerderband_Einlauf_FWD := FALSE;
+        Schieber_Foerderband_Einlauf_BWD := TRUE;
+        Status := 20;
+    END_IF
+    
+20:
+    IF Schieber_Foerderband_Einlauf_LBK THEN
+        Status :=0;         
+END_IF
+
+END_CASE
+
+Sensor := Sensor_Foerderband_Einlauf_IR AND GVL.Enabled_out;
+
+IF NOT GVL.Enabled_out THEN
+    Schieber_Foerderband_Einlauf_FWD := FALSE;
+    Schieber_Foerderband_Einlauf_BWD := TRUE;
+    Status := 0;
+END_IF

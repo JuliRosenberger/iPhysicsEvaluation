@@ -1,0 +1,11 @@
+SymbolName;Type;Direction;ComponentName;Function;DriveType;VarName;VarPath
+Pusher_1_LBK;BOOL;READ;Pusher:1;Kinematic;;KinAtBack;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinAtBack"
+Pusher_1_LFR;BOOL;READ;Pusher:1;Kinematic;;KinAtFront;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinAtFront"
+Pusher_1_AXIS;FLOAT32;READ;Pusher:1;Kinematic;;KinAxis;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinAxis"
+Pusher_1_BWD;BOOL;WRITE;Pusher:1;Kinematic;RampedBitMotor;KinBack;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinBack"
+Pusher_1_FWD;BOOL;WRITE;Pusher:1;Kinematic;RampedBitMotor;KinForward;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Pusher:1?KinForward"
+Strahl_1_IR;BOOL;READ;Strahl:1;LightBarrier;;IR;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/13000:1/Strahl:1?IR"
+EndoflEnd_of_Line_Packaging_STEP_Enabled_out;BOOL;READ;EndoflEnd_of_Line_Packaging_STEP;ModelScript;;Enabled_out;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Enabled_out"
+EndoflLaufwagen_TriggerZaehler;BOOL;WRITE;EndoflLaufwagen;ModelScript;;TriggerZaehler;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?TriggerZaehler"
+Quelle_1_CNT;FLOAT64;READ;Quelle:1;TransientSource;;CountDown;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Karton:1/Quelle:1?CountDown"
+Quelle_1_NumReleased;UINT64;READ;Quelle:1;TransientSource;;NumReleased;"Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Karton:1/Quelle:1?NumReleased"

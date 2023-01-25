@@ -1,0 +1,212 @@
+
+PROGRAM PLC_PRG
+VAR
+	ZaehlungQuer : UINT :=8;
+	ZaehlungLaengs : UINT := 3;	
+	triggerZaehler_ : BOOL := FALSE;
+	Status : UINT := 0;
+
+END_VAR
+
+
+CASE Status OF 
+0 : //quer zaehler
+    GVL.Schieber_Foerderband_Einlauf_Enabled := TRUE;
+    IF GVL.TriggerZaehler AND NOT triggerZaehler_ THEN
+        IF GVL.ZaehlerQuer < ZaehlungQuer THEN
+            GVL.ZaehlerQuer := GVL.ZaehlerQuer + 1;
+        ELSE
+            GVL.ZaehlerQuer := 0;
+            Status := 10;
+        END_IF
+    END_IF    
+
+    GVL.Drehschieber_Set_GST := TRUE;
+    GVL.Drehschieber_Set_AST := FALSE;  
+
+10 : //vorschieben
+
+    GVL.Drehschieber_Set_GST := FALSE;
+    GVL.Drehschieber_Set_AST := TRUE;  
+
+    GVL.Schieber_Foerderband_Einlauf_Enabled := FALSE;
+    GVL.Vorschieben_Cmd := 1;
+    IF GVL.Vorschieben_Busy THEN
+        GVL.Vorschieben_Cmd := 0;
+        Status := 11;
+    END_IF
+11 :
+    IF NOT GVL.Vorschieben_Busy THEN
+        Status := 20;
+    END_IF
+    
+20 : //laengs zaehler
+
+    GVL.Schieber_Foerderband_Einlauf_Enabled := TRUE;
+
+       IF GVL.TriggerZaehler AND NOT triggerZaehler_ THEN
+          IF GVL.ZaehlerLaengs < ZaehlungLaengs THEN
+              GVL.ZaehlerLaengs := GVL.ZaehlerLaengs + 1;
+          ELSE
+              GVL.ZaehlerLaengs := 0;
+              Status := 30;
+          END_IF
+      END_IF
+  
+30 : //vorschieben
+
+    GVL.Drehschieber_Set_GST := FALSE;
+    GVL.Drehschieber_Set_AST := TRUE;  
+    
+    GVL.Schieber_Foerderband_Einlauf_Enabled := FALSE;
+    GVL.Vorschieben_Cmd := 1;
+    IF GVL.Vorschieben_Busy THEN
+        GVL.Vorschieben_Cmd := 0;
+        Status := 31;
+    END_IF
+31 :
+    IF NOT GVL.Vorschieben_Busy THEN
+        Status := 40;
+    END_IF
+
+    
+40 : //laengs zaehler
+
+    GVL.Schieber_Foerderband_Einlauf_Enabled := TRUE;
+
+       IF GVL.TriggerZaehler AND NOT triggerZaehler_ THEN
+          IF GVL.ZaehlerLaengs < ZaehlungLaengs THEN
+              GVL.ZaehlerLaengs := GVL.ZaehlerLaengs + 1;
+          ELSE
+              GVL.ZaehlerLaengs := 0;
+              Status := 45;
+          END_IF
+        END_IF
+
+45: //warten auf komplett vorschieben
+    GVL.Schieber_Foerderband_Einlauf_Enabled := FALSE;
+    GVL.Ausschieben := TRUE;
+     IF GVL.Hubwagen_AXIS > GVL.Hubausschiebpos THEN
+        Status := 50;
+    
+         END_IF
+  
+50 : //komplett vorschieben
+
+    GVL.Drehschieber_Set_GST := FALSE;
+    GVL.Drehschieber_Set_AST := TRUE;  
+    
+
+    GVL.Vorschieben_Cmd := 2;
+    IF GVL.Vorschieben_Busy THEN
+        GVL.Vorschieben_Cmd := 0;
+        Status := 51;
+    END_IF
+51 :
+    IF NOT GVL.Vorschieben_Busy THEN
+        Status := 60;
+    END_IF
+
+    
+60 : //laengs zaehler
+
+    GVL.Schieber_Foerderband_Einlauf_Enabled := TRUE;
+
+       IF GVL.TriggerZaehler AND NOT triggerZaehler_ THEN
+          IF GVL.ZaehlerLaengs < ZaehlungLaengs THEN
+              GVL.ZaehlerLaengs := GVL.ZaehlerLaengs + 1;
+          ELSE
+              GVL.ZaehlerLaengs := 0;
+              Status := 70;
+          END_IF
+      END_IF
+  
+70 : //vorschieben
+
+    GVL.Drehschieber_Set_GST := FALSE;
+    GVL.Drehschieber_Set_AST := TRUE; 
+    
+    GVL.Schieber_Foerderband_Einlauf_Enabled := FALSE;
+    GVL.Vorschieben_Cmd := 1;
+    IF GVL.Vorschieben_Busy THEN
+        GVL.Vorschieben_Cmd := 0;
+        Status := 71;
+    END_IF
+71 :
+    IF NOT GVL.Vorschieben_Busy THEN
+        Status := 80;
+    END_IF
+    
+80 : //laengs zaehler 
+
+    GVL.Schieber_Foerderband_Einlauf_Enabled := TRUE;
+
+       IF GVL.TriggerZaehler AND NOT triggerZaehler_ THEN
+          IF GVL.ZaehlerLaengs < ZaehlungLaengs THEN
+              GVL.ZaehlerLaengs := GVL.ZaehlerLaengs + 1;
+          ELSE
+              GVL.ZaehlerLaengs := 0;
+              Status := 90;
+          END_IF
+    END_IF    
+
+90 : //vorschieben
+
+    GVL.Drehschieber_Set_GST := TRUE;
+    GVL.Drehschieber_Set_AST := FALSE; 
+    
+    GVL.Schieber_Foerderband_Einlauf_Enabled := FALSE;
+    GVL.Vorschieben_Cmd := 1;
+    IF GVL.Vorschieben_Busy THEN
+        GVL.Vorschieben_Cmd := 0;
+        Status := 91;
+    END_IF
+91 :
+    IF NOT GVL.Vorschieben_Busy THEN
+        Status := 100;
+    END_IF
+ 
+100 : //quer zaehler 
+
+    GVL.Schieber_Foerderband_Einlauf_Enabled := TRUE;
+
+      IF GVL.TriggerZaehler AND NOT triggerZaehler_ THEN
+          IF GVL.ZaehlerQuer < ZaehlungQuer THEN
+              GVL.ZaehlerQuer := GVL.ZaehlerQuer + 1;
+          ELSE
+              GVL.ZaehlerQuer := 0;
+              Status := 105;
+          END_IF
+END_IF 
+105:
+    GVL.Schieber_Foerderband_Einlauf_Enabled := FALSE;
+    IF GVL.Hubwagen_AXIS > GVL.Hubausschiebpos THEN
+        Status := 110;
+    END_IF
+    
+110 : //komplett vorschieben
+    GVL.Vorschieben_Cmd := 2;
+    IF GVL.Vorschieben_Busy THEN
+        GVL.Vorschieben_Cmd := 0;
+        Status := 111;
+    END_IF
+
+
+111 : Status:= Status + 9;
+
+120:IF NOT GVL.Vorschieben_Busy THEN
+        Status := 130;
+END_IF 
+
+130: IF NOT GVL.Vorschieben_Busy THEN
+        Status := 0;
+    END_IF 
+ 
+  
+END_CASE
+
+triggerZaehler_ := GVL.TriggerZaehler;
+
+//END;
+
+//END;

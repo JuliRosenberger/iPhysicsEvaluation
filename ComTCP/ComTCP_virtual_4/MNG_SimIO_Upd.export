@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+    <Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile"/>
+  <List2 Name="EntryList">
+	<Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+       <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">6c197a75-9c1a-42ff-8a93-0fcf135f3ba2</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">MNG_SimIO</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">3a156c76-b2c0-4928-8c7f-1b2660ded2d9</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">738bea1e-99bb-4f04-90bb-a7a567e74e3a</Single>
+        <Null Name="EmbeddedTypeGuids"/>
+        <Single Name="Timestamp" Type="long">637594574223755536</Single>
+      </Single>
+      <Single Name="Object" Type="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" Method="IArchivable">
+        <Single Name="StructuredViewGuid" Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3a156c76-b2c0-4928-8c7f-1b2660ded2d9</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+		<Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">False</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">cf560e16-8707-4d65-830d-92b85639210d</Single><Single Name="ParentGuid" Type="System.Guid">5028933c-f8eb-44c8-8da8-dac6a00e4fbc</Single><Single Name="Name" Type="string">MNG_APPLICATION_INPUTS_32BIT</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties"/><Single Name="TypeGuid" Type="System.Guid">2db5746d-d284-4425-9f7f-2663a34b0ebc</Single><Array Name="EmbeddedTypeGuids" Type="System.Guid"><Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single></Array><Single Name="Timestamp" Type="long">637483797770987614</Single></Single><Single Name="Object" Type="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" Method="IArchivable"><Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable"><Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable"><Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}"><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">6</Single><Null Name="Tag"/><Single Name="Text" Type="string">TYPE MNG_APPLICATION_INPUTS_32BIT :</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">7</Single><Null Name="Tag"/><Single Name="Text" Type="string">STRUCT</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">8</Single><Null Name="Tag"/><Single Name="Text" Type="string">    NumSignals                    : INT     := 14        ;</Single></Single>
+<Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflGreifarm01_ACT_SPD: REAL    := 0.0; (* aging_STEP_EndoflHubgeruest_EndoflGreifarm?KinSpeed *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflGreifarm01_DLT_POS: REAL    := 0.0; (* aging_STEP_EndoflHubgeruest_EndoflGreifarm?KinDelta *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflGreifarm01_AXIS: REAL    := 0.0; (* kaging_STEP_EndoflHubgeruest_EndoflGreifarm?KinAxis *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflHubgeruest01_AXIS: REAL    := 0.0; (* End_of_Line_Packaging_STEP_EndoflHubgeruest?KinAxis *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflHubgeruest01_DLT_POS: REAL    := 0.0; (* nd_of_Line_Packaging_STEP_EndoflHubgeruest?KinDelta *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflHubgeruest01_ACT_SPD: REAL    := 0.0; (* nd_of_Line_Packaging_STEP_EndoflHubgeruest?KinSpeed *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflGreifarm_RCHD: BOOL    := 0; (* ing_STEP_EndoflHubgeruest_EndoflGreifarm?KinReached *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflHubgeruest_RCHD: BOOL    := 0; (* _of_Line_Packaging_STEP_EndoflHubgeruest?KinReached *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Sauger_VACUUM: BOOL    := 0; (* _STEP_EndoflHubgeruest_EndoflGreifarm_Sauger?Vacuum *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflSchieber_LBK: BOOL    := 0; (* ndoflGreifarm_Schieber_Hub_EndoflSchieber?KinAtBack *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Virtueller_Greifer_VACUUM: BOOL    := 0; (* doflGreifarm_EndoflPlatte_Virtueller_Greifer?Vacuum *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflEnd_of_Line_Packaging_STEP_Status_in: UINT    := 0; (* _EndoflEnd_of_Line_Packaging_STEP?Status_in *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflEnd_of_Line_Packaging_STEP_Ausschieben_out: BOOL    := 0; (* _EndoflEnd_of_Line_Packaging_STEP?Ausschieben_out *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflLaufwagen_Hubausschiebpos: REAL    := 0.0; (* ng_STEP_Laufwagen_1_EndoflLaufwagen?Hubausschiebpos *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">18</Single><Null Name="Tag"/><Single Name="Text" Type="string">END_STRUCT</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">5</Single><Null Name="Tag"/><Single Name="Text" Type="string">END_TYPE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">1</Single><Null Name="Tag"/><Single Name="Text" Type="string"/></Single></Array></Single></Single><Single Name="UniqueIdGenerator" Type="string">18</Single></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">6c197a75-9c1a-42ff-8a93-0fcf135f3ba2</Single><Array Name="Path" Type="string"><Single Type="string">Device</Single><Single Type="string">SPS-Logik</Single><Single Type="string">Application</Single><Single Type="string">MNG_SimIO</Single></Array><Single Name="Index" Type="int">-1</Single></Single>
+        <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">False</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">0cf7cfdd-e222-41f2-ad4e-37a6bcd9d200</Single><Single Name="ParentGuid" Type="System.Guid">5028933c-f8eb-44c8-8da8-dac6a00e4fbc</Single><Single Name="Name" Type="string">MNG_APPLICATION_OUTPUTS_32BIT</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties"/><Single Name="TypeGuid" Type="System.Guid">2db5746d-d284-4425-9f7f-2663a34b0ebc</Single><Array Name="EmbeddedTypeGuids" Type="System.Guid"><Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single></Array><Single Name="Timestamp" Type="long">637483797770987614</Single></Single><Single Name="Object" Type="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" Method="IArchivable"><Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable"><Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable"><Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}"><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">6</Single><Null Name="Tag"/><Single Name="Text" Type="string">TYPE MNG_APPLICATION_OUTPUTS_32BIT :</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">7</Single><Null Name="Tag"/><Single Name="Text" Type="string">STRUCT</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">8</Single><Null Name="Tag"/><Single Name="Text" Type="string">    NumSignals                    : INT     := 15        ;</Single></Single>
+<Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflGreifarm_TGT_POS: REAL    := 0.0; (* ging_STEP_EndoflHubgeruest_EndoflGreifarm?KinTarget *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflHubgeruest_TGT_POS: REAL    := 0.0; (* d_of_Line_Packaging_STEP_EndoflHubgeruest?KinTarget *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Sauger_GRIP: BOOL    := 0; (* STEP_EndoflHubgeruest_EndoflGreifarm_Sauger?Gripper *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Gleitschiene_Links_FWD: BOOL    := 0; (* eruest_EndoflGreifarm_Gleitschiene_Links?KinForward *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Gleitschiene_Rechts_FWD: BOOL    := 0; (* ruest_EndoflGreifarm_Gleitschiene_Rechts?KinForward *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Gleitschiene_Rechts_BWD: BOOL    := 0; (* bgeruest_EndoflGreifarm_Gleitschiene_Rechts?KinBack *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Gleitschiene_Links_BWD: BOOL    := 0; (* ubgeruest_EndoflGreifarm_Gleitschiene_Links?KinBack *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Schieber_Hub_BWD: BOOL    := 0; (* ndoflHubgeruest_EndoflGreifarm_Schieber_Hub?KinBack *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Schieber_Hub_FWD: BOOL    := 0; (* flHubgeruest_EndoflGreifarm_Schieber_Hub?KinForward *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflZwischenlage_TRIG: BOOL    := 0; (* d_of_Line_Packaging_STEP_EndoflZwischenlage?Trigger *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflSchieber_FWD: BOOL    := 0; (* doflGreifarm_Schieber_Hub_EndoflSchieber?KinForward *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">EndoflSchieber_BWD: BOOL    := 0; (* _EndoflGreifarm_Schieber_Hub_EndoflSchieber?KinBack *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Sink_Deactivate: BOOL    := 0; (* ng_STEP_EndoflEuro_laengs_800x1200_Sink?Deactivate *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Gripper_GRIP: BOOL    := 0; (* ng_STEP_EndoflEuro_laengs_800x1200_Gripper?Gripper *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">9</Single><Null Name="Tag"/><Single Name="Text" Type="string">Virtueller_Greifer_GRIP: BOOL    := 0; (* oflGreifarm_EndoflPlatte_Virtueller_Greifer?Gripper *)
+</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">18</Single><Null Name="Tag"/><Single Name="Text" Type="string">END_STRUCT</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">5</Single><Null Name="Tag"/><Single Name="Text" Type="string">END_TYPE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">1</Single><Null Name="Tag"/><Single Name="Text" Type="string"/></Single></Array></Single></Single><Single Name="UniqueIdGenerator" Type="string">18</Single></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">6c197a75-9c1a-42ff-8a93-0fcf135f3ba2</Single><Array Name="Path" Type="string"><Single Type="string">Device</Single><Single Type="string">SPS-Logik</Single><Single Type="string">Application</Single><Single Type="string">MNG_SimIO</Single></Array><Single Name="Index" Type="int">-1</Single></Single>
+	<Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">48572b6b-dcc3-47bb-b11c-e66596e6ca0a</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3a156c76-b2c0-4928-8c7f-1b2660ded2d9</Single>
+        <Single Name="Name" Type="string">MNG_SIMIO_UPDATER</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">6c197a75-9c1a-42ff-8a93-0fcf135f3ba2</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">637594574224045369</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">43</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">IF NOT bInit THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">44</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">//         SysCallbackRegister(INDEXOF(CallbackReset), EVENT_BEFORE_RESET);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">271</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">	callback.eEvent := CB.EVENT.BEFORE_RESET;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">272</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">	callback.eClass := CB.EVENT_CLASS.ALL_CLASSES;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">274</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">	callback.eSource := CB.EVENT_SOURCE.ALL_SOURCES;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">276</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">	callback.pPOUFunc := ADR(CallbackReset); </Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">270</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">280</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">	CB.RegisterCallback(callback, ADR(callbackError));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">45</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        bInit := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">46</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">47</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">CASE state OF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">48</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">0:											(* Init *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">49</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">  	socket := -1(*SOCKET_INVALID*);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">50</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">  	Connected := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">51</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">  	IF connect THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">52</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">  	        state  := 10;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">53</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">  	END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">54</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">10:											(* Create socket *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">55</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        socket := SysSockCreate(SOCKET_AF_INET, SOCKET_STREAM, 0, ADR(result));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">56</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        (*IF socket &lt;&gt; 0(*= SOCKET_INVALID*) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">57</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">            state := 100;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">58</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">59</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">            state := 20;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">60</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        END_IF*)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">245</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">		state := 20;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">61</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">20:											(* Setup and Connect *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">62</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        (* SysSockSetOption(socket, SOCKET_SOL, SOCKET_SO_SNDBUF, ADR(diMaxDataSize), SIZEOF(diMaxDataSize));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">63</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        SysSockSetOption(socket, SOCKET_SOL, SOCKET_SO_RCVBUF, ADR(diMaxDataSize), SIZEOF(diMaxDataSize));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">64</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        lOptLinger.l_onoff:=0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">65</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        lOptLinger.l_linger:=0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">66</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        SysSockSetOption(diSocket,	SOCKET_SOL, SOCKET_SO_LINGER, ADR(lOptLinger), SIZEOF(lOptLinger)); *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">67</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        bOptNoDelay:=TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">68</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        SysSockSetOption(socket,	SOCKET_IPPROTO_TCP, SOCKET_TCP_NODELAY, ADR(bOptNoDelay), SIZEOF(bOptNoDelay));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">69</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        sa.sin_family:=SOCKET_AF_INET;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">70</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        sa.sin_addr.ulAddr:=GetIPAddress(IPAddress);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">71</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        tvTimeout.tv_sec := timeout ;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">72</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        tvTimeout.tv_usec := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">73</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        fdRead.fd_count := 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">74</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        fdRead.fd_array[0] := socket;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">75</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        IF sa.sin_addr.ulAddr = SOCKET_INADDR_NONE THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">76</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                state := 121;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">77</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">78</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                 sa.sin_port:=SysSockHtons(port);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">79</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                 IF SysSockConnect(socket, ADR(sa), SIZEOF(sa)) = 0  THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">80</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        state := 30;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">81</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                 ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">82</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                         Error := 10035(*SysSockGetLastErrorSync(socket)*);	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">83</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">						(* Query reason why connect reported failure *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">84</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                         CASE  Error OF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">85</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                         10035: 			(* EWOULDBLOCK *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">86</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                 state := 30;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">87</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                         10056: 			 (* ALREADY_CONNECTED*)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">88</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                 state := 30;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">89</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                         ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">90</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                 state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">91</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                         END_CASE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">92</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">93</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">94</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">30:											(* Data exchange *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">95</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                Connected := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">96</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                fdRead.fd_array[0] := socket;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">97</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                IF (SysSockSelect(SOCKET_FD_SETSIZE, ADR(fdRead), 0, 0, ADR(tvTimeout), ADR(pdiReady)) = CmpErrors.Errors.ERR_OK) AND pdiReady &gt; 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">98</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                expectedSize := 16 + (I.NumSignals+1) * 4;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">99</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                recvSize := SysSockRecv(socket, ADR(fromServer), expectedSize, 0, ADR(result));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">100</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                IF result &lt;&gt; CmpErrors.Errors.ERR_OK OR expectedSize &lt;= 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">101</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                         state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">102</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string"/>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">103</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                ELSIF expectedSize = recvSize THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">104</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string"/>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">105</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        (* correct header data *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">106</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        fromServer.Header.ByteCount   	 := SysSockNtohl(fromServer.Header.ByteCount);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">107</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        Counter                        				:= SysSockNtohl(fromServer.Header.Counter);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">108</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        fromServer.Header.SentTime  	   := SysSockNtohl(fromServer.Header.SentTime);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">109</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        fromServer.Header.DatagramType := SysSockNtohl(fromServer.Header.DatagramType);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">110</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string"/>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">111</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        (* currently only use the data on a 32 Bit raw image *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">112</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        IF fromServer.Header.DatagramType = MNG_DatagramType.MNG_Raw32BitImage THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflGreifarm01_ACT_SPD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[2]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflGreifarm01_ACT_SPD), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflGreifarm01_DLT_POS *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[3]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflGreifarm01_DLT_POS), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflGreifarm01_AXIS *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[4]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflGreifarm01_AXIS), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflHubgeruest01_AXIS *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[5]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflHubgeruest01_AXIS), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflHubgeruest01_DLT_POS *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[6]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflHubgeruest01_DLT_POS), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflHubgeruest01_ACT_SPD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[7]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflHubgeruest01_ACT_SPD), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflGreifarm_RCHD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.EndoflGreifarm_RCHD := fromServer.Payload[8] &lt;&gt; 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflHubgeruest_RCHD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.EndoflHubgeruest_RCHD := fromServer.Payload[9] &lt;&gt; 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Sauger_VACUUM *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.Sauger_VACUUM := fromServer.Payload[10] &lt;&gt; 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflSchieber_LBK *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.EndoflSchieber_LBK := fromServer.Payload[11] &lt;&gt; 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Virtueller_Greifer_VACUUM *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.Virtueller_Greifer_VACUUM := fromServer.Payload[12] &lt;&gt; 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* UINT EndoflEnd_of_Line_Packaging_STEP_Status_in *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">117</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[13]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">118</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.EndoflEnd_of_Line_Packaging_STEP_Status_in := DWORD_TO_UINT(DWordBuffer);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflEnd_of_Line_Packaging_STEP_Ausschieben_out *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        I.EndoflEnd_of_Line_Packaging_STEP_Ausschieben_out := fromServer.Payload[14] &lt;&gt; 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflLaufwagen_Hubausschiebpos *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">139</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        DWordBuffer := SysSockNtohl(fromServer.Payload[15]);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">140</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        SysMemCpy(pDest := ADR(I.EndoflLaufwagen_Hubausschiebpos), pSrc := ADR(DWordBuffer), udiCount := 4);</Single></Single>
+              
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">149</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                        state :=  40;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">150</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">151</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">282</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">283</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">284</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">152</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">40:											(* Send data *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">153</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        sendSize := 16 + (Q.NumSignals+1) * 4;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">154</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        (*IF (SysSockSelect(SOCKET_FD_SETSIZE, ADR(fdRead), 0, 0, ADR(tvTimeout), ADR(result)) &gt; 0) THEN*)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">155</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          toServer.Header.ByteCount    := SysSockHtonl(sendSize-16);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">156</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          toServer.Header.DatagramType := SysSockHtonl(MNG_DatagramType.MNG_Raw32BitImage);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">157</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          toServer.Header.Counter      := SysSockHtonl(Counter);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">158</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          toServer.Payload[1] := SysSockHtonl(Q.NumSignals); (* number of signals *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflGreifarm_TGT_POS *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">185</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        SysMemCpy(pDest := ADR(DWordBuffer), pSrc := ADR(Q.EndoflGreifarm_TGT_POS), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">186</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        toServer.Payload[2] := SysSockHtonl(DWordBuffer);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* REAL EndoflHubgeruest_TGT_POS *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">185</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        SysMemCpy(pDest := ADR(DWordBuffer), pSrc := ADR(Q.EndoflHubgeruest_TGT_POS), udiCount := 4);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">186</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        toServer.Payload[3] := SysSockHtonl(DWordBuffer);</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Sauger_GRIP *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Sauger_GRIP = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[4] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[4] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Gleitschiene_Links_FWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Gleitschiene_Links_FWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[5] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[5] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Gleitschiene_Rechts_FWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Gleitschiene_Rechts_FWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[6] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[6] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Gleitschiene_Rechts_BWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Gleitschiene_Rechts_BWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[7] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[7] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Gleitschiene_Links_BWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Gleitschiene_Links_BWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[8] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[8] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Schieber_Hub_BWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Schieber_Hub_BWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[9] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[9] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Schieber_Hub_FWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Schieber_Hub_FWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[10] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[10] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflZwischenlage_TRIG *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.EndoflZwischenlage_TRIG = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[11] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[11] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflSchieber_FWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.EndoflSchieber_FWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[12] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[12] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL EndoflSchieber_BWD *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.EndoflSchieber_BWD = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[13] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[13] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Sink_Deactivate *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Sink_Deactivate = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[14] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[14] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Gripper_GRIP *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Gripper_GRIP = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[15] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[15] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">120</Single><Null Name="Tag"/><Single Name="Text" Type="string">                                                        (* BOOL Virtueller_Greifer_GRIP *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">193</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        IF Q.Virtueller_Greifer_GRIP = TRUE THEN</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">194</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[16] := 16#FFFFFFFF;   (*BOOL *)</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">195</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        ELSE</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">196</Single><Null Name="Tag"/><Single Name="Text" Type="string">                            toServer.Payload[16] := 0;</Single></Single><Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable"><Single Name="Id" Type="long">197</Single><Null Name="Tag"/><Single Name="Text" Type="string">                        END_IF;</Single></Single>
+              
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">199</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        (*    toServer.Header.SentTime := SysSockHtonl(clock.systemTime.wMilliseconds + clock.systemTime.wMinute * 60000); *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">200</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">            sentSize := SysSockSend(socket, ADR(toServer), sendSize, 0, ADR(result));</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">201</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">            IF sentSize &lt; 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">202</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">               state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">203</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">            ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">204</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">               state := 30;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">205</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">            END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">206</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        (*ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">207</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                        state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">208</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">        END_IF*)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">209</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">60:											(* Disconnect *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">210</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                IF socket = 0(*SOCKET_INVALID*) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">211</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                state := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">212</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">213</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                IF SysSockClose(socket) &lt;&gt; 0(*= FALSE*) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">214</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                          state := 161;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">215</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">216</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                                state := 70;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">217</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">218</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">219</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">70:											(* Delete socket *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">220</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          IF socket = 0(*SOCKET_INVALID*) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">221</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                state := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">222</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">223</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                    IF SysSockShutdown(socket, 0) &lt;&gt; 0(*= FALSE*) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">224</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                          state := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">225</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">226</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                                state := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">227</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                                END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">228</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">          END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">229</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">110:										(* Error Create socket failed *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">230</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">231</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">121:										(* Error IP number invalid *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">232</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">233</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">122:										(* Error connect failed *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">234</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">     state := 70;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">235</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">131:										(* Error while receiving, received bytes &lt; expected)*)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">236</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                 state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">237</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">161: 										(* Error close failed *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">238</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">239</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">END_CASE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">240</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">IF NOT connect AND state&gt; 0 AND state &lt; 60 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">241</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">                state := 60;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">9</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">10</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">FUNCTION_BLOCK MNG_SIMIO_UPDATER</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">11</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">(* This function block implements simple TCP/IP client protocol.              *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">12</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">(* The max. size of binary tx/rx data has to be &lt;= PLCPRJ_BUFFER_SIZE         *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">13</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">VAR_INPUT</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">14</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">connect : BOOL := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">15</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">IPAddress : STRING := '192.168.8.175';</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">16</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">port : INT := 5006;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">17</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">timeout : DINT := 3;		(* Timeout in seconds *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">18</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">Q : MNG_Application_Outputs_32Bit;    (* Tx user data *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">19</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">20</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">VAR_OUTPUT</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">21</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">I      : MNG_Application_Inputs_32Bit        ; (* Rx user data *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">22</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">Counter   : DINT := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">23</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">Connected : BOOL := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">24</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">25</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">26</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">state : INT := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">27</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">socket : RTS_IEC_HANDLE := -1(*SOCKET_INVALID*);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">28</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">bOptNoDelay: BOOL := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">29</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">sa:SOCKADDRESS;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">30</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">fdRead:SOCKET_FD_SET;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">31</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">tvTimeout:SOCKET_TIMEVAL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">286</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">pdiReady:DINT := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">32</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">toServer         : MNG_RawDatagram;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">33</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">fromServer       : MNG_RawDatagram;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">34</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">expectedSize, recvSize : LINT := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">35</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">sendSize: UDINT := 0; </Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">244</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">sentSize : LINT := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">243</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string"/>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">36</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">bInit: BOOL := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">37</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">DWordBuffer      : DWORD                                               ; (* convert DWORD data *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">38</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">DIntBuffer       : DINT                                                ; (* convert DINT data *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">39</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">Segment11_F: BOOL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">40</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">Error: DINT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">41</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">diSocket: BOOL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">242</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">result: RTS_IEC_RESULT; </Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">269</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">callback: CB.CB_CALLBACK;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">281</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">callbackError: CB.ERROR; </Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">42</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">8</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string">(* @END_DECLARATION := '0'                                                    *)</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1</Single>
+                <Null Name="Tag"/>
+                <Single Name="Text" Type="string"/>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">285</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList"/>
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">6c197a75-9c1a-42ff-8a93-0fcf135f3ba2</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">MNG_SimIO</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    </List2>
+  <Single Name="ProfileName" Type="string">CODESYS V3.5 SP17</Single>
+</Single>
+  </StructuredView>
+</ExportFile>

@@ -1,0 +1,32 @@
+
+PROGRAM PLC_PRG
+VAR
+	GST_pos : REAL := 0;
+	AST_pos : REAL :=  -0.13;
+
+	Set_GST : BOOL := TRUE;
+	Set_AST : BOOL := FALSE;
+
+	Ist_GST : BOOL := FALSE;
+	Ist_AST : BOOL := FALSE;
+END_VAR
+
+
+IF Set_GST THEN
+    GVL.TGT_POS := GST_pos;
+ELSIF Set_AST THEN
+    GVL.TGT_POS := AST_pos;
+END_IF
+
+IF GVL.TGT_POS = GST_pos AND RCHD THEN
+    Ist_GST := TRUE;
+ELSE      
+    Ist_GST := FALSE;
+END_IF
+
+IF GVL.TGT_POS = AST_pos AND RCHD THEN
+    Ist_AST := TRUE;
+ELSE      
+    Ist_AST := FALSE;
+END_IF
+

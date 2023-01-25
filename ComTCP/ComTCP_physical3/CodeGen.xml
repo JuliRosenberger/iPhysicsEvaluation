@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGen>
+	<Header date="2023-01-14" time="21:34:59" organization="machineering" application="iPhysics_3.1.master" build="6b7d6479c" version="3.1.15981.master" architecture="Windows 64 Bit"/>
+	<Manufacturer name="Bosch Rexroth ctrlX"/>
+	<Interface type="ComTCP" name="ComTCP_ctrlX104">
+		<Server host="192.168.8.175" hostHex="c0a808af" port="5004" portHex="138c" interval="7" protocol="TCP" packedMode="0" actAsServer="1" hostIP1="192" hostIP2="168" hostIP3="8" hostIP4="175"/>
+		<Inputs Count="5" SizeInBytes="20" SizeInBytes_PackedMessage="28">
+			<Connection Name="Drehschieber_Achse_1_RCHD" From="_EndoflEnd_of_Line_Packaging_STEP_Drehschieber_1_Drehschieber_Achse_1?KinReached" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="E0.0"/>
+			<Connection Name="Drehschieber_Achse_1_AXIS" From="_EndoflEnd_of_Line_Packaging_STEP_Drehschieber_1_Drehschieber_Achse_1?KinAxis" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="ED8"/>
+			<Connection Name="Drehschieber_Achse_1_KinActPosOffset" From="_EndoflEnd_of_Line_Packaging_STEP_Drehschieber_1_Drehschieber_Achse_1?KinActPosOffset" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="8" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="ED12"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Set_AST_out" From="" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="28" PackedBitIndex="0" HardwareAddress="E16.0"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Set_GST_out" From="" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="16" PackedByteIndex="28" PackedBitIndex="1" HardwareAddress="E16.1"/>
+		</Inputs>
+		<Outputs Count="3" SizeInBytes="12" SizeInBytes_PackedMessage="24">
+			<Connection Name="Drehschieber_Achse_1_TGT_POS" From="" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="AD0"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Ist_GST_out" From="_EndoflEnd_of_Line_Packaging_STEP?Ist_GST_out" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="4" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="A4.1"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Ist_AST_out" From="_EndoflEnd_of_Line_Packaging_STEP?Ist_AST_out" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="24" PackedBitIndex="1" HardwareAddress="A4.2"/>
+		</Outputs>
+	</Interface>
+	<Functions/>
+	<Tasks>
+		<Task Name="PLC" CycleTime="7" Priority="0"/>
+	</Tasks>
+	<Mechatronics>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Drehschieber_Achse:1]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1]]></ItemPath>
+			<PLCTagName><![CDATA[Drehschieber_Achse_1_RCHD]]></PLCTagName>
+			<SymbolName><![CDATA[Drehschieber_Achse_1_RCHD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Drehschieber_Achse:1) (Kinematic) - KinReached]]></VarComment>
+			<VarName><![CDATA[KinReached]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?KinReached]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Drehschieber_Achse:1]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1]]></ItemPath>
+			<PLCTagName><![CDATA[Drehschieber_Achse_1_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[Drehschieber_Achse_1_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Drehschieber_Achse:1) (Kinematic) - KinAxis]]></VarComment>
+			<VarName><![CDATA[KinAxis]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?KinAxis]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Drehschieber_Achse:1]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1]]></ItemPath>
+			<PLCTagName><![CDATA[Drehschieber_Achse_1_KinActPosOffset]]></PLCTagName>
+			<SymbolName><![CDATA[Drehschieber_Achse_1_KinActPosOffset]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Drehschieber_Achse:1) (Kinematic) - KinActPosOffset]]></VarComment>
+			<VarName><![CDATA[KinActPosOffset]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Drehschieber:1/Drehschieber_Achse:1?KinActPosOffset]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[ComTCP_ctrlX104]]></ComponentName>
+			<Function><![CDATA[]]></Function>
+			<ItemPath><![CDATA[ComTcp://comtcp/ComTCP_ctrlX104]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Set_AST_out]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Set_AST_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(ComTCP_ctrlX104) () - EndoflEnd_of_Line_Packaging_STEP_Set_AST_out]]></VarComment>
+			<VarName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Set_AST_out]]></VarName>
+			<VarPath><![CDATA[ComTcp://comtcp/ComTCP_ctrlX104?EndoflEnd_of_Line_Packaging_STEP_Set_AST_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[ComTCP_ctrlX104]]></ComponentName>
+			<Function><![CDATA[]]></Function>
+			<ItemPath><![CDATA[ComTcp://comtcp/ComTCP_ctrlX104]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Set_GST_out]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Set_GST_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(ComTCP_ctrlX104) () - EndoflEnd_of_Line_Packaging_STEP_Set_GST_out]]></VarComment>
+			<VarName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Set_GST_out]]></VarName>
+			<VarPath><![CDATA[ComTcp://comtcp/ComTCP_ctrlX104?EndoflEnd_of_Line_Packaging_STEP_Set_GST_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[ComTCP_ctrlX104]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[ComTcp://comtcp/ComTCP_ctrlX104]]></ItemPath>
+			<PLCTagName><![CDATA[Drehschieber_Achse_1_TGT_POS]]></PLCTagName>
+			<SymbolName><![CDATA[Drehschieber_Achse_1_TGT_POS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(ComTCP_ctrlX104) (Kinematic) - Drehschieber_Achse_1_TGT_POS]]></VarComment>
+			<VarName><![CDATA[Drehschieber_Achse_1_TGT_POS]]></VarName>
+			<VarPath><![CDATA[ComTcp://comtcp/ComTCP_ctrlX104?Drehschieber_Achse_1_TGT_POS]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ist_GST_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ist_GST_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Ist_GST_out]]></VarComment>
+			<VarName><![CDATA[Ist_GST_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Ist_GST_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ist_AST_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ist_AST_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Ist_AST_out]]></VarComment>
+			<VarName><![CDATA[Ist_AST_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Ist_AST_out]]></VarPath>
+		</Entity>
+	</Mechatronics>
+</CodeGen>

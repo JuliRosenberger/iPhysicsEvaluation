@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGen>
+	<Header date="2023-01-18" time="10:39:48" organization="machineering" application="iPhysics_3.1.master" build="6b7d6479c" version="3.1.15981.master" architecture="Windows 64 Bit"/>
+	<Manufacturer name="Bosch Rexroth ctrlX"/>
+	<Interface type="ComTCP" name="ComTCP_virtual3_EA">
+		<Server host="192.168.8.175" hostHex="c0a808af" port="5006" portHex="138e" interval="7" protocol="TCP" packedMode="0" actAsServer="1" hostIP1="192" hostIP2="168" hostIP3="8" hostIP4="175"/>
+		<Inputs Count="14" SizeInBytes="56" SizeInBytes_PackedMessage="50">
+			<Connection Name="EndoflGreifarm01_ACT_SPD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm?KinSpeed" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="ED0"/>
+			<Connection Name="EndoflGreifarm01_DLT_POS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm?KinDelta" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="4" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="ED4"/>
+			<Connection Name="EndoflGreifarm01_AXIS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm?KinAxis" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="8" PackedByteIndex="28" PackedBitIndex="0" HardwareAddress="ED8"/>
+			<Connection Name="EndoflHubgeruest01_AXIS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest?KinAxis" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="12" PackedByteIndex="32" PackedBitIndex="0" HardwareAddress="ED12"/>
+			<Connection Name="EndoflHubgeruest01_DLT_POS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest?KinDelta" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="16" PackedByteIndex="36" PackedBitIndex="0" HardwareAddress="ED16"/>
+			<Connection Name="EndoflHubgeruest01_ACT_SPD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest?KinSpeed" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="20" PackedByteIndex="40" PackedBitIndex="0" HardwareAddress="ED20"/>
+			<Connection Name="EndoflGreifarm_RCHD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm?KinReached" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="24" PackedByteIndex="44" PackedBitIndex="0" HardwareAddress="E24.0"/>
+			<Connection Name="EndoflHubgeruest_RCHD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest?KinReached" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="28" PackedByteIndex="44" PackedBitIndex="1" HardwareAddress="E24.1"/>
+			<Connection Name="Sauger_VACUUM" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Sauger?Vacuum" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="32" PackedByteIndex="44" PackedBitIndex="2" HardwareAddress="E24.2"/>
+			<Connection Name="EndoflSchieber_LBK" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Schieber_Hub_EndoflSchieber?KinAtBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="36" PackedByteIndex="44" PackedBitIndex="3" HardwareAddress="E24.3"/>
+			<Connection Name="Virtueller_Greifer_VACUUM" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_EndoflPlatte_Virtueller_Greifer?Vacuum" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="40" PackedByteIndex="44" PackedBitIndex="4" HardwareAddress="E24.4"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Status_in" From="_EndoflEnd_of_Line_Packaging_STEP?Status_in" Type="UINT16" S7Type="UINT" SizeInBytes="4" CodesysType="UINT" StructType="" ByteIndex="44" PackedByteIndex="44" PackedBitIndex="5" HardwareAddress="EW28"/>
+			<Connection Name="EndoflEnd_of_Line_Packaging_STEP_Ausschieben_out" From="_EndoflEnd_of_Line_Packaging_STEP?Ausschieben_out" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="48" PackedByteIndex="46" PackedBitIndex="0" HardwareAddress="E32.0"/>
+			<Connection Name="EndoflLaufwagen_Hubausschiebpos" From="_EndoflEnd_of_Line_Packaging_STEP_Laufwagen_1_EndoflLaufwagen?Hubausschiebpos" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="52" PackedByteIndex="46" PackedBitIndex="1" HardwareAddress="ED36"/>
+		</Inputs>
+		<Outputs Count="15" SizeInBytes="60" SizeInBytes_PackedMessage="29">
+			<Connection Name="EndoflGreifarm_TGT_POS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm?KinTarget" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="AD0"/>
+			<Connection Name="EndoflHubgeruest_TGT_POS" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest?KinTarget" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="4" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="AD4"/>
+			<Connection Name="Sauger_GRIP" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Sauger?Gripper" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="28" PackedBitIndex="0" HardwareAddress="A8.0"/>
+			<Connection Name="Gleitschiene_Links_FWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Gleitschiene_Links?KinForward" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="28" PackedBitIndex="1" HardwareAddress="A8.1"/>
+			<Connection Name="Gleitschiene_Rechts_FWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Gleitschiene_Rechts?KinForward" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="16" PackedByteIndex="28" PackedBitIndex="2" HardwareAddress="A8.2"/>
+			<Connection Name="Gleitschiene_Rechts_BWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Gleitschiene_Rechts?KinBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="20" PackedByteIndex="28" PackedBitIndex="3" HardwareAddress="A8.3"/>
+			<Connection Name="Gleitschiene_Links_BWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Gleitschiene_Links?KinBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="24" PackedByteIndex="28" PackedBitIndex="4" HardwareAddress="A8.4"/>
+			<Connection Name="Schieber_Hub_BWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Schieber_Hub?KinBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="28" PackedByteIndex="28" PackedBitIndex="5" HardwareAddress="A8.5"/>
+			<Connection Name="Schieber_Hub_FWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Schieber_Hub?KinForward" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="32" PackedByteIndex="28" PackedBitIndex="6" HardwareAddress="A8.6"/>
+			<Connection Name="EndoflZwischenlage_TRIG" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflZwischenlage?Trigger" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="36" PackedByteIndex="28" PackedBitIndex="7" HardwareAddress="A8.7"/>
+			<Connection Name="EndoflSchieber_FWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Schieber_Hub_EndoflSchieber?KinForward" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="40" PackedByteIndex="29" PackedBitIndex="0" HardwareAddress="A9.0"/>
+			<Connection Name="EndoflSchieber_BWD" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_Schieber_Hub_EndoflSchieber?KinBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="44" PackedByteIndex="29" PackedBitIndex="1" HardwareAddress="A9.1"/>
+			<Connection Name="Sink_Deactivate" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflEuro_laengs__800x1200_Sink?Deactivate" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="48" PackedByteIndex="29" PackedBitIndex="2" HardwareAddress="A9.2"/>
+			<Connection Name="Gripper_GRIP" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflEuro_laengs__800x1200_Gripper?Gripper" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="52" PackedByteIndex="29" PackedBitIndex="3" HardwareAddress="A9.3"/>
+			<Connection Name="Virtueller_Greifer_GRIP" From="_EndoflEnd_of_Line_Packaging_STEP_EndoflHubgeruest_EndoflGreifarm_EndoflPlatte_Virtueller_Greifer?Gripper" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="56" PackedByteIndex="29" PackedBitIndex="4" HardwareAddress="A9.4"/>
+		</Outputs>
+	</Interface>
+	<Functions/>
+	<Tasks>
+		<Task Name="PLC" CycleTime="7" Priority="0"/>
+	</Tasks>
+	<Mechatronics>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflGreifarm]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflGreifarm01_ACT_SPD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflGreifarm01_ACT_SPD]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflGreifarm) (Kinematic) - KinSpeed]]></VarComment>
+			<VarName><![CDATA[KinSpeed]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm?KinSpeed]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflGreifarm]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflGreifarm01_DLT_POS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflGreifarm01_DLT_POS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflGreifarm) (Kinematic) - KinDelta]]></VarComment>
+			<VarName><![CDATA[KinDelta]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm?KinDelta]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflGreifarm]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflGreifarm01_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflGreifarm01_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflGreifarm) (Kinematic) - KinAxis]]></VarComment>
+			<VarName><![CDATA[KinAxis]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm?KinAxis]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflHubgeruest]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflHubgeruest01_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflHubgeruest01_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflHubgeruest) (Kinematic) - KinAxis]]></VarComment>
+			<VarName><![CDATA[KinAxis]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest?KinAxis]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflHubgeruest]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflHubgeruest01_DLT_POS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflHubgeruest01_DLT_POS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflHubgeruest) (Kinematic) - KinDelta]]></VarComment>
+			<VarName><![CDATA[KinDelta]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest?KinDelta]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflHubgeruest]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflHubgeruest01_ACT_SPD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflHubgeruest01_ACT_SPD]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflHubgeruest) (Kinematic) - KinSpeed]]></VarComment>
+			<VarName><![CDATA[KinSpeed]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest?KinSpeed]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflGreifarm]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflGreifarm_RCHD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflGreifarm_RCHD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflGreifarm) (Kinematic) - KinReached]]></VarComment>
+			<VarName><![CDATA[KinReached]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm?KinReached]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflHubgeruest]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflHubgeruest_RCHD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflHubgeruest_RCHD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflHubgeruest) (Kinematic) - KinReached]]></VarComment>
+			<VarName><![CDATA[KinReached]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest?KinReached]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Sauger]]></ComponentName>
+			<Function><![CDATA[CompliantGripper]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Sauger]]></ItemPath>
+			<PLCTagName><![CDATA[Sauger_VACUUM]]></PLCTagName>
+			<SymbolName><![CDATA[Sauger_VACUUM]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Sauger) (CompliantGripper) - Vacuum]]></VarComment>
+			<VarName><![CDATA[Vacuum]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Sauger?Vacuum]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflSchieber]]></ComponentName>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub/EndoflSchieber]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflSchieber_LBK]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflSchieber_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflSchieber) (Kinematic) - KinAtBack]]></VarComment>
+			<VarName><![CDATA[KinAtBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub/EndoflSchieber?KinAtBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Virtueller Greifer]]></ComponentName>
+			<Function><![CDATA[CompliantGripper]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/EndoflPlatte/Virtueller Greifer]]></ItemPath>
+			<PLCTagName><![CDATA[Virtueller_Greifer_VACUUM]]></PLCTagName>
+			<SymbolName><![CDATA[Virtueller_Greifer_VACUUM]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Virtueller Greifer) (CompliantGripper) - Vacuum]]></VarComment>
+			<VarName><![CDATA[Vacuum]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/EndoflPlatte/Virtueller Greifer?Vacuum]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Status_in]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Status_in]]></SymbolName>
+			<Type><![CDATA[UINT16]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Status_in]]></VarComment>
+			<VarName><![CDATA[Status_in]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Status_in]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflEnd_of_Line_Packaging_STEP]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ausschieben_out]]></PLCTagName>
+			<Preprocessor><![CDATA[Spatial InterOp 3D]]></Preprocessor>
+			<Sending_System><![CDATA[ ]]></Sending_System>
+			<SymbolName><![CDATA[EndoflEnd_of_Line_Packaging_STEP_Ausschieben_out]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflEnd_of_Line_Packaging_STEP) (ModelScript) - Ausschieben_out]]></VarComment>
+			<VarName><![CDATA[Ausschieben_out]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP?Ausschieben_out]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[EndoflLaufwagen]]></ComponentName>
+			<Function><![CDATA[ModelScript]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflLaufwagen_Hubausschiebpos]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflLaufwagen_Hubausschiebpos]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflLaufwagen) (ModelScript) - Hubausschiebpos]]></VarComment>
+			<VarName><![CDATA[Hubausschiebpos]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/Laufwagen:1/EndoflLaufwagen?Hubausschiebpos]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflGreifarm]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflGreifarm_TGT_POS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflGreifarm_TGT_POS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflGreifarm) (Kinematic) - KinTarget]]></VarComment>
+			<VarName><![CDATA[KinTarget]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm?KinTarget]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflHubgeruest]]></ComponentName>
+			<DriveType><![CDATA[PositioningMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflHubgeruest_TGT_POS]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflHubgeruest_TGT_POS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(EndoflHubgeruest) (Kinematic) - KinTarget]]></VarComment>
+			<VarName><![CDATA[KinTarget]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest?KinTarget]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Sauger]]></ComponentName>
+			<Function><![CDATA[CompliantGripper]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Sauger]]></ItemPath>
+			<PLCTagName><![CDATA[Sauger_GRIP]]></PLCTagName>
+			<SymbolName><![CDATA[Sauger_GRIP]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Sauger) (CompliantGripper) - Gripper]]></VarComment>
+			<VarName><![CDATA[Gripper]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Sauger?Gripper]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gleitschiene_Links]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Links]]></ItemPath>
+			<PLCTagName><![CDATA[Gleitschiene_Links_FWD]]></PLCTagName>
+			<SymbolName><![CDATA[Gleitschiene_Links_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gleitschiene_Links) (Kinematic) - KinForward]]></VarComment>
+			<VarName><![CDATA[KinForward]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Links?KinForward]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gleitschiene_Rechts]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Rechts]]></ItemPath>
+			<PLCTagName><![CDATA[Gleitschiene_Rechts_FWD]]></PLCTagName>
+			<SymbolName><![CDATA[Gleitschiene_Rechts_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gleitschiene_Rechts) (Kinematic) - KinForward]]></VarComment>
+			<VarName><![CDATA[KinForward]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Rechts?KinForward]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gleitschiene_Rechts]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Rechts]]></ItemPath>
+			<PLCTagName><![CDATA[Gleitschiene_Rechts_BWD]]></PLCTagName>
+			<SymbolName><![CDATA[Gleitschiene_Rechts_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gleitschiene_Rechts) (Kinematic) - KinBack]]></VarComment>
+			<VarName><![CDATA[KinBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Rechts?KinBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gleitschiene_Links]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Links]]></ItemPath>
+			<PLCTagName><![CDATA[Gleitschiene_Links_BWD]]></PLCTagName>
+			<SymbolName><![CDATA[Gleitschiene_Links_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gleitschiene_Links) (Kinematic) - KinBack]]></VarComment>
+			<VarName><![CDATA[KinBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Gleitschiene_Links?KinBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Schieber_Hub]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub]]></ItemPath>
+			<PLCTagName><![CDATA[Schieber_Hub_BWD]]></PLCTagName>
+			<SymbolName><![CDATA[Schieber_Hub_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Schieber_Hub) (Kinematic) - KinBack]]></VarComment>
+			<VarName><![CDATA[KinBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub?KinBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Schieber_Hub]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub]]></ItemPath>
+			<PLCTagName><![CDATA[Schieber_Hub_FWD]]></PLCTagName>
+			<SymbolName><![CDATA[Schieber_Hub_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Schieber_Hub) (Kinematic) - KinForward]]></VarComment>
+			<VarName><![CDATA[KinForward]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub?KinForward]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflZwischenlage]]></ComponentName>
+			<Function><![CDATA[TransientSource]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflZwischenlage]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflZwischenlage_TRIG]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflZwischenlage_TRIG]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflZwischenlage) (TransientSource) - Trigger]]></VarComment>
+			<VarName><![CDATA[Trigger]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflZwischenlage?Trigger]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflSchieber]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub/EndoflSchieber]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflSchieber_FWD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflSchieber_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflSchieber) (Kinematic) - KinForward]]></VarComment>
+			<VarName><![CDATA[KinForward]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub/EndoflSchieber?KinForward]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[EndoflSchieber]]></ComponentName>
+			<DriveType><![CDATA[RampedBitMotor]]></DriveType>
+			<Function><![CDATA[Kinematic]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub/EndoflSchieber]]></ItemPath>
+			<PLCTagName><![CDATA[EndoflSchieber_BWD]]></PLCTagName>
+			<SymbolName><![CDATA[EndoflSchieber_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(EndoflSchieber) (Kinematic) - KinBack]]></VarComment>
+			<VarName><![CDATA[KinBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/Schieber_Hub/EndoflSchieber?KinBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Sink]]></ComponentName>
+			<Function><![CDATA[TransientSink]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflEuro_laengs_ 800x1200/Sink]]></ItemPath>
+			<PLCTagName><![CDATA[Sink_Deactivate]]></PLCTagName>
+			<SymbolName><![CDATA[Sink_Deactivate]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Sink) (TransientSink) - Deactivate]]></VarComment>
+			<VarName><![CDATA[Deactivate]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflEuro_laengs_ 800x1200/Sink?Deactivate]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gripper]]></ComponentName>
+			<Function><![CDATA[CompliantGripper]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflEuro_laengs_ 800x1200/Gripper]]></ItemPath>
+			<PLCTagName><![CDATA[Gripper_GRIP]]></PLCTagName>
+			<SymbolName><![CDATA[Gripper_GRIP]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gripper) (CompliantGripper) - Gripper]]></VarComment>
+			<VarName><![CDATA[Gripper]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflEuro_laengs_ 800x1200/Gripper?Gripper]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Virtueller Greifer]]></ComponentName>
+			<Function><![CDATA[CompliantGripper]]></Function>
+			<ItemPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/EndoflPlatte/Virtueller Greifer]]></ItemPath>
+			<PLCTagName><![CDATA[Virtueller_Greifer_GRIP]]></PLCTagName>
+			<SymbolName><![CDATA[Virtueller_Greifer_GRIP]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Virtueller Greifer) (CompliantGripper) - Gripper]]></VarComment>
+			<VarName><![CDATA[Gripper]]></VarName>
+			<VarPath><![CDATA[Physics://physics/EndoflEnd_of_Line_Packaging_STEP/EndoflHubgeruest/EndoflGreifarm/EndoflPlatte/Virtueller Greifer?Gripper]]></VarPath>
+		</Entity>
+	</Mechatronics>
+</CodeGen>
